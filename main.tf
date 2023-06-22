@@ -39,7 +39,7 @@ resource "aws_instance" "web" {
 }
 
 resource "local_file" "inventory" {
-  content = templatefile("./template/hosts.tpl",
+  content = templatefile("~/SRE-TF/lab-21-EC2-Instance/template/hosts.tpl",
     {
       sre-instance = aws_instance.web.public_ip
       key_name = var.key_pair_name
@@ -49,7 +49,7 @@ resource "local_file" "inventory" {
 }
 
 resource "local_file" "readme" {
-  content = templatefile("./template/README.tpl",
+  content = templatefile("~/SRE-TF/lab-21-EC2-Instance/template/README.tpl",
     {
       KEY_NAME = aws_instance.web.key_name
       DNS_NAME = aws_instance.web.public_dns
