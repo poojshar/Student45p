@@ -16,11 +16,11 @@ jobs:
 
       - name: Terraform Init
         id: init
-        run: cd terraform init
+        run: terraform init
       
       - name: Terraform Validate
         id: validate
-        run: cd terraform validate -no-color
+        run: terraform validate -no-color
 
       - name: Terraform Plan
         id: plan
