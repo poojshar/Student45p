@@ -1,4 +1,4 @@
-name = "pod46-vm"
-owner = "pod46-student"
+name = "pod00-vm"
+owner = "pod00-student"
 env = "SRE-LAB"
-key_pair_name = "sre_pod46_key"
+key_pair_name = "sre_pod00_key"
