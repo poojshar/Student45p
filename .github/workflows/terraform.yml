@@ -16,7 +16,7 @@ jobs:
 
       - name: Terraform Init
         id: init
-        run: cd ~/SRE-TF/lab-21-EC2-Instance && terraform init
+        run: terraform init
       
       - name: Terraform Validate
         id: validate
