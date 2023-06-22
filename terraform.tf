@@ -5,10 +5,4 @@ terraform {
       source = "hashicorp/aws"
     }
   }
-  backend "s3" {
-    bucket         = "onecloud-kube"
-    key            = "pod41-ec2.tfstate"
-    region         = "us-east-1"
-    encrypt        = true
-  }
 }
